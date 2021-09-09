@@ -94,13 +94,15 @@ $ echo "/usr/local/lib" > /etc/ld.so.conf
 - The 'test_program' folder is where you put the test files. Those *.c files is the original program files. 
 
 
-To run DAMER, type the following command from this directory:
+To run DAMER, type the following command in 'exe' directory:
 
-$ ./exe/PDNet2_0 [-showtree] [-showcpn] (-compare|-directbuild|-slice) (filename)
+$ ./PDNet2_0 [-showtree] [-showcpn] (-compare|-directbuild|-slice) ./test_programs/(filename)
+
+Tips: The contents in parentheses are required
 
 for example:
 
-$ ./exe/PDNet2_0 -compare ./test_programs/fib_bench-1.c
+$ ./PDNet2_0 -compare ../test_programs/fib_bench-1.c
 
 More command can be seen with:
 

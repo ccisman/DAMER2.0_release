@@ -96,3 +96,14 @@ direct build time: 3.640
 model_check: 10.114
 total time: 13.754
 
+
+current file: ../test_programs/fib_bench-1.i
+formula:1
+
+direct build time: 3.797
+model_check: 12601.730
+total time: 12605.527
+
+G(!(is-fireable{T0,}))
+
+
