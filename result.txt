@@ -1,0 +1,60 @@
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/bigshot_p.i
+formula:1
+
+
+current file: ./test_programs/bigshot_p.i
+formula:1
+
+
+current file: ./test_programs/stack-1.i
+formula:1
+
+
+current file: ./test_programs/triangular-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
+
+current file: ./test_programs/fib_bench-1.i
+formula:1
+
