@@ -27,8 +27,8 @@ There are two ways to install tcmalloc
 
 Use our script to install tcmalloc automatically. You can use the following command-lines in this directory.
 
-$ cd tcmalloc
-$ chmod +x install.sh
+$ cd tcmalloc \
+$ chmod +x install.sh \
 $ sudo ./install.sh
 
 It will takes a few minutes if everything goes well. 
@@ -51,7 +51,7 @@ if there is an error occured, use the following commands:
 
 $ sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c \
 $ echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h \
-$ sudo make install
+$ sudo make install \
 $ cd ..
 
 Second, you should install autoconf
