@@ -7,9 +7,12 @@ The c program must satisfy ANSI-C grammar.
 
 
 ## Environment
-- Ubuntu version > 14
+- Ubuntu or Deepin
 
 ## installation 
+
+Since our tool use Graphviz and tcmalloc. You should make sure they are installed in your computer.
+
 ### install Graphviz.
 
 if you have not installed Graphviz yet, use the following command-line to install Graphviz
@@ -17,6 +20,20 @@ if you have not installed Graphviz yet, use the following command-line to instal
 $ sudo apt-get install graphviz
 
 ### install tcmalloc.
+
+There are two ways to install tcmalloc
+
+#### 1.
+
+Use our script to install tcmalloc automatically. You can use the following command-lines in this directory.
+
+$ cd tcmalloc \
+$ chmod +x install.sh \
+$ sudo ./install.sh
+
+It will takes a few minutes if everything goes well. 
+
+#### 2.
 
 if you have not installed tcmalloc yet, use the following command-lines to install tcmalloc
 
@@ -32,10 +49,10 @@ $ cd ..
 
 if there is an error occured, use the following commands:
 
-#$ sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c \
-#$ echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h \
-#$ sudo make install
-#$ cd ..
+$ sed -i 's/IO_ftrylockfile/IO_EOF_SEEN/' lib/*.c \
+$ echo "#define _IO_IN_BACKUP 0x100" >> lib/stdio-impl.h \
+$ sudo make install \
+$ cd ..
 
 Second, you should install autoconf
 
