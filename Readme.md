@@ -1,4 +1,4 @@
-# DAMER 2.0
+﻿# DAMER 2.0
 
 an aotumatic tool for modeling and slicing multiple-thread c programs(PThread programs).
 
@@ -9,7 +9,7 @@ The c program must satisfy ANSI-C grammar.
 ## Environment
 - Ubuntu or Deepin
 
-## installation 
+## installation
 
 Since our tool use Graphviz and tcmalloc. You should make sure they are installed in your computer.
 
@@ -19,7 +19,7 @@ if you have not installed Graphviz yet, use the following command-line to instal
 
 $ sudo apt-get install graphviz
 
-### install tcmalloc.
+### install tcmalloc.(tcmalloc的安装如果出现任何问题，可以使用mac版本进行测试，mac版本中去掉了tcmalloc的相关使用)
 
 There are two ways to install tcmalloc
 
@@ -31,7 +31,7 @@ $ cd tcmalloc \
 $ chmod +x install.sh \
 $ sudo ./install.sh
 
-It will takes a few minutes if everything goes well. 
+It will takes a few minutes if everything goes well.
 
 #### 2.
 
@@ -89,7 +89,7 @@ Fifth, you should install libunwind
 $ wget http://download.savannah.gnu.org/releases/libunwind/libunwind-1.1.tar.gz \
 $ tar -zxvf libunwind-1.1.tar.gz \
 $ cd libunwind-1.1 \
-$ ./configure --prefix=/usr/local 
+$ ./configure --prefix=/usr/local
 
 $ sudo make && sudo make install \
 $ cd ..
@@ -108,12 +108,12 @@ $ echo "/usr/local/lib" > /etc/ld.so.conf
 
 ## Usage
 
-- The 'test_program' folder is where you put the test files. Those *.c files is the original program files. 
+- The 'test_program' folder is where you put the test files. Those *.c files is the original program files.
 
 
 To run DAMER, type the following command in 'exe' directory:
 
-$ ./PDNet2_0 [-showtree] [-showcpn] (-compare|-directbuild|-slice) ./test_programs/(filename)
+$ ./PDNet2_0 [-showtree] [-showcpn][-heu][-PDNetSlice][-TraditionalSlice][-CIA][-property filename] (filename)
 
 Tips: The contents in parentheses are required
 
@@ -125,3 +125,5 @@ More command can be seen with:
 
 $ ./exe/PDNet2_0 -help
 
+## Script
+可以将run.sh脚本放在可执行文件对应目录下运行来批量处理测试文件。
